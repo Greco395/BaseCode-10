@@ -224,7 +224,6 @@ $saved_message=false;
                               <div class="alert-body">
                                 <div class="alert-title">Success!</div>
                                   Settings saved successfully
-                                <br><br><a class="btn btn-primary" href="?edit=database">Reload Page</a>
                               </div>
                             </div>';
   }

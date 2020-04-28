@@ -275,6 +275,33 @@ if($up_rq['update'] != false){
             </div>
           </div>
         </div>
+        <div class="modal fade" tabindex="-1" role="dialog" id="resetALLmodal">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">RESET BASECODE</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Are you sure to reset all basecode ("main.php", "settings.php", "brain.php") and replace them with backups?</p>
+                <form action="brain.php?bs_show_brainHTML=yes" method="POST">
+                <br>
+                <div class="form-group">
+                  <label>Confirm your password to continue</label>
+                  <input type="password" class="form-control" name="password" placeholder="Insert your password">
+                </div>
+              </div>
+              <div class="modal-footer bg-whitesmoke br">
+                <a class="btn btn-secondary" data-dismiss="modal">NO! GO BACK</a>
+                  <input type="hidden" name="case" value="reset_ALL" />
+                  <button type="submit" class="btn btn-danger">YES! RESET ALL</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="modal fade" tabindex="-1" role="dialog" id="resetMAINmodal">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
