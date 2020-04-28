@@ -112,7 +112,7 @@ $msg = null;
                     <div class="d-block">
                     	<label for="password" class="control-label">Password</label>
                     </div>
-                    <input id="password" type="password" class="form-control" name="password" tabindex="2" required>
+                    <input id="password" type="password" class="form-control" name="password" tabindex="2" required autocomplete="new-password">
                     <div class="invalid-feedback">
                       please fill in a password
                     </div>
@@ -122,7 +122,7 @@ $msg = null;
                     <div class="d-block">
                     	<label for="repassword" class="control-label">Retype Password</label>
                     </div>
-                    <input id="repassword" type="password" class="form-control" name="repassword" tabindex="3" required>
+                    <input id="repassword" type="password" class="form-control" name="repassword" tabindex="3" required autocomplete="new-password">
                     <div class="invalid-feedback">
                       please retype the password
                     </div>
