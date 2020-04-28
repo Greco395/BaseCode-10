@@ -129,6 +129,7 @@ if(!isset($_GET['edit'])){
 
 <?php 
 include("../settings.php");
+$saved_message=false;
   if(isset($_POST)){
 // GENERAL
     if(isset($_POST['case']) && $_POST['case'] == "update_general"){
@@ -163,6 +164,7 @@ include("../settings.php");
       }
 
       $class_administrator_bs->saveSettings($BS_SETTINGS_INTERNAL);
+      $saved_message=true;
       
     }elseif(isset($_POST['case']) && $_POST['case'] == "update_plugins"){
 // PLUGINS 
@@ -175,6 +177,7 @@ include("../settings.php");
       $BS_SETTINGS_INTERNAL['PLUGINS']['FILE-INCLUDED_FROM_BASECODE'] = $_POST['FILE-INCLUDED_FROM_BASECODE'];
       $BS_SETTINGS_INTERNAL['PLUGINS']['FILE-GUI_PLUGIN_MANAGER'] = $_POST['FILE-GUI_PLUGIN_MANAGER'];
       $class_administrator_bs->saveSettings($BS_SETTINGS_INTERNAL);
+      $saved_message=true;
     }elseif(isset($_POST['case']) && $_POST['case'] == "update_database"){
 // DATABASE 
       if($_POST['IS_ENABLED'] or $_POST['IS_ENABLED'] == "true"){
@@ -195,6 +198,7 @@ include("../settings.php");
       $BS_SETTINGS_INTERNAL['CAPTCHA']['HCAPTCHA_PUBLIC-KEY'] = $_POST['HCAPTCHA_PUBLIC-KEY'];
       $BS_SETTINGS_INTERNAL['CAPTCHA']['HCAPTCHA_PRIVATE-KEY'] = $_POST['HCAPTCHA_PRIVATE-KEY'];
       $class_administrator_bs->saveSettings($BS_SETTINGS_INTERNAL);
+      $saved_message=true;
     }elseif(isset($_POST['case']) && $_POST['case'] == "update_errors"){
 // ERRORS 
       if(!$_POST['NEVER_DIE_PAGE'] or $_POST['NEVER_DIE_PAGE'] == "false"){
@@ -211,7 +215,18 @@ include("../settings.php");
       $BS_SETTINGS_INTERNAL['ERRORS']['DEFAULT_ERROR'] = $_POST['DEFAULT_ERROR'];
       $BS_SETTINGS_INTERNAL['ERRORS']['DEFAULT_DIE_ERROR'] = $_POST['DEFAULT_DIE_ERROR'];
       $class_administrator_bs->saveSettings($BS_SETTINGS_INTERNAL);
+      $saved_message=true;
     }
+  }
+  if($saved_message){
+    echo '<div class="alert alert-success alert-has-icon">
+                              <div class="alert-icon"><i class="far fa-lightbulb"></i></div>
+                              <div class="alert-body">
+                                <div class="alert-title">Success!</div>
+                                  Settings saved successfully
+                                <br><br><a class="btn btn-primary" href="?edit=database">Reload Page</a>
+                              </div>
+                            </div>';
   }
 ?>
 
