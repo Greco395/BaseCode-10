@@ -22,7 +22,7 @@ define('MAIN_DIR', "../plugins");
 define('VERSION', '2.0.0');
 define('SHOW_PHP_SELF', false);
 define('SHOW_HIDDEN_FILES', true);
-define('HISTORY_PATH', MAIN_DIR . DS . '.basecode_phedhistory');
+define('HISTORY_PATH', "./basecode_phedhistory");
 define('MAX_HISTORY_FILES', 5);
 define('WORD_WRAP', true);
 define('PERMISSIONS', 'newfile,newdir,editfile,deletefile,deletedir,renamefile,renamedir,uploadfile'); // empty means all
