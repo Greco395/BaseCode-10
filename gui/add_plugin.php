@@ -50,7 +50,7 @@ if(isset($_POST) && isset($_POST['new_pl_case'])){
               <div class="card">
                 <div class="card-body">
                     <nav class="navbar bg-primary">
-                      <a class="navbar-brand" href="#">EDIT OR CREATE PLUGIN</a>
+                      <a class="navbar-brand" href="./plugin_editor.php">EDIT OR CREATE PLUGIN</a>
                       <form class="form-inline">
                         <a class="btn btn-outline-dark" href="./plugin_editor.php">OPEN PHEDITOR</a>
                       </form>

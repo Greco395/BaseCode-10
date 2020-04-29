@@ -51,6 +51,7 @@ if(!$class_administrator_bs->check_logged()){ header("Location: access.php"); di
     }
   }
 ?>
+
           <div class="row">
             <div class="col-md-8">
               <div class="card">

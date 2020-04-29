@@ -76,7 +76,7 @@ if(!isset($page_title)){ $page_title="Basecode"; }
                 <a href="./plugins.php" class="nav-link"><i class="fas fa-plug"></i><span>Manage Plugins</span></a>
               </li>
               <li class="nav-item <?php if($page_name == "add_plugin"){ echo "active"; } ?>">
-                <a href="./add_plugin.php" class="nav-link"><i class="fas fa-plus"></i><span>Add Plugin</span></a>
+                <a href="./add_plugin.php" class="nav-link"><i class="fas fa-plus"></i><span>Add/Edit Plugin</span></a>
               </li>
               <li class="menu-header">Configurations</li>
               <li class="nav-item <?php if($page_name == "get_logs"){ echo "active"; } ?>">
