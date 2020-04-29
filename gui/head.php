@@ -1,7 +1,7 @@
 <?php
 if(!isset($enable_head_security)){ die(";("); }
 $bs_version = "10.0.0"; 
-$bs_edition = "BR update 2";
+$bs_edition = "BRTE update 2";
 if(!include("brain.php")){
     die("brain.php not found! <a href='https://greco395.com/basecode/docs/?error=brain_not_found#brain'>more info</a>");
 }
