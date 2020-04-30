@@ -50,10 +50,13 @@ if(isset($_POST) && isset($_POST['logs_case'])){
                     ?></textarea>
             </div>
             <div class="card-footer text-right">
-                <form action="" method="POST">
-                    <input type="hidden" name="logs_case" value="clearAll" />
-                    <button type="submit" class="btn btn-danger">CLEAR LOGS</button>
-                </form>
+                <div class="buttons">
+                    <form action="" method="POST">
+                        <input type="hidden" name="logs_case" value="clearAll" />
+                        <a href="?reload" class="btn btn-primary"><i class="fas fa-sync-alt"></i> Reload</a>
+                        <button type="submit" class="btn btn-danger"><i class="fas fa-trash-alt"></i> CLEAR LOGS</button>
+                    </form>
+                </div>
             </div>
 
           </div>

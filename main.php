@@ -43,10 +43,10 @@ if($BS_SETTINGS_INTERNAL['GENERAL']['DEBUG_MODE_PHP']){
     ini_set('display_errors', 0);
     ini_set('display_startup_errors', 0);
 }
-$BS_DEBUG=array();
+$BS_DEBUG="";
 function add_log($add_log, $type = "GENERIC_ERROR", $forced = false){
     global $BS_SETTINGS_INTERNAL;
-    $new_log = "{Date: [".date("m-d-Y H:i", time())."]} - {Log_Type: [".$type."]} - {Log_Content: ['".$add_log."']}";
+    $new_log = "{\nDate: ".date("m-d-Y H:i:s", time())."\nLog_Type: ".$type."\nLog_Content: '".$add_log."'\n}";
     if($BS_SETTINGS_INTERNAL['GENERAL']['DEBUG_VAR']){
         global $BS_DEBUG;
         $BS_DEBUG .= $new_log;
@@ -71,12 +71,12 @@ function add_log($add_log, $type = "GENERIC_ERROR", $forced = false){
 function bs_die($error, $die_text = null){
     global $BS_SETTINGS_INTERNAL;
     if(!$BS_SETTINGS_INTERNAL['ERRORS']['NEVER_DIE_PAGE']){
-        if(is_null($text)){
+        if(is_null($die_text)){
             die($BS_SETTINGS_INTERNAL['ERRORS']['DEFAULT_DIE_ERROR']);
         }
     }
     if($BS_SETTINGS_INTERNAL['ERRORS']['SHOW_HTML_ERROR_MESSAGE']){
-        echo "<hr>".$error."<br><hr>for hide this messages edit ERRORS->SHOW_HTML_ERROR_MESSAGE to false<br><hr>";
+        echo "<p title='for hide this messages edit ERRORS->SHOW_HTML_ERROR_MESSAGE to false'>".$error."</p>";
     }
 }
 
