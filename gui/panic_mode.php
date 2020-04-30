@@ -1,9 +1,5 @@
 <?php 
 class PANIC{
-    public $plugins_folder;
-    public $plugin_indexFile;
-    public $plugin_confFile;
-    public $plugin_enabled;
     public $internal_bs_version = "10-0-0";
     public function __construct(){
         session_name("secure");
