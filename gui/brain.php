@@ -1,7 +1,5 @@
 <?php 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+
 class ADMINISTRATOR{
     public $plugins_folder;
     public $plugin_indexFile;
@@ -328,9 +326,9 @@ if(isset($_POST) && !empty($_POST['case']) && !empty($_GET['bs_show_brainHTML'])
         if(!$class_administrator_bs->check_logged()){ return die("NOT LOGGED"); }
         $rq = $class_administrator_bs->login($_SESSION['username'], $_POST['password']);
         if($rq){
-            $class_administrator_bs->restore_file("../main.php", "backup/backup_main.php");
-            $class_administrator_bs->restore_file("../settings.php", "backup/backup_settings.php");
-            $class_administrator_bs->restore_file("./brain.php", "backup/backup_brain.php");
+            $class_administrator_bs->restore_file("../main.php", "backups/backup_main.php");
+            $class_administrator_bs->restore_file("../settings.php", "backups/backup_settings.php");
+            $class_administrator_bs->restore_file("./brain.php", "backups/backup_brain.php");
             $type = "success";
             $msg = "ALL FILE ARE RESTORED!";
         }else{
@@ -342,7 +340,7 @@ if(isset($_POST) && !empty($_POST['case']) && !empty($_GET['bs_show_brainHTML'])
         if(!$class_administrator_bs->check_logged()){ return die("NOT LOGGED"); }
         $rq = $class_administrator_bs->login($_SESSION['username'], $_POST['password']);
         if($rq){
-            $class_administrator_bs->restore_file("../main.php", "backup/backup_main.php");
+            $class_administrator_bs->restore_file("../main.php", "backups/backup_main.php");
             $type = "success";
             $msg = "MAIN FILE RESTORED!";
         }else{
@@ -354,7 +352,7 @@ if(isset($_POST) && !empty($_POST['case']) && !empty($_GET['bs_show_brainHTML'])
         if(!$class_administrator_bs->check_logged()){ return die("NOT LOGGED"); }
         $rq = $class_administrator_bs->login($_SESSION['username'], $_POST['password']);
         if($rq){
-            $class_administrator_bs->restore_file("../settings.php", "backup/backup_settings.php");
+            $class_administrator_bs->restore_file("../settings.php", "backups/backup_settings.php");
             $type = "success";
             $msg = "SETTINGS FILE RESTORED!";
         }else{
@@ -366,7 +364,7 @@ if(isset($_POST) && !empty($_POST['case']) && !empty($_GET['bs_show_brainHTML'])
         if(!$class_administrator_bs->check_logged()){ return die("NOT LOGGED"); }
         $rq = $class_administrator_bs->login($_SESSION['username'], $_POST['password']);
         if($rq){
-            $class_administrator_bs->restore_file("./brain.php", "backup/backup_brain.php");
+            $class_administrator_bs->restore_file("./brain.php", "backups/backup_brain.php");
             $type = "success";
             $msg = "BRAIN FILE RESTORED!";
         }else{

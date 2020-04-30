@@ -21,11 +21,11 @@
             "FILE-GUI_PLUGIN_MANAGER" => "config.php",
         ),
         "DB" => array(
-            "IS_ENABLED" => true, // enable or disabled db
-            "HOST" => array("localhost", "localhost"),
-            "NAME" => array("basecode_test", "basecode_test2"),
-            "USER" => array("capo","capo"),
-            "PASS" => array("ciao","ciao"),
+            "IS_ENABLED" => false, // enable or disabled db
+            "HOST" => array("localhost"),
+            "NAME" => array("basecodeDB_test"),
+            "USER" => array("basecodeDB_UserTest"),
+            "PASS" => array("basecodeDB_PasswordTest"),
         ),
         "CAPTCHA" => array(
             "GOOGLE_CAPTCHA_PUBLIC-KEY" => "key_value",

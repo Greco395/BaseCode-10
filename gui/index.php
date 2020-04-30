@@ -323,7 +323,7 @@ if($up_rq['update'] != false){
               <div class="modal-footer bg-whitesmoke br">
                 <a class="btn btn-secondary" data-dismiss="modal">NO! GO BACK</a>
                   <input type="hidden" name="case" value="reset_MAIN" />
-                  <button type="button" class="btn btn-danger">YES! RESET MAIN FILE</button>
+                  <button type="submit" class="btn btn-danger">YES! RESET MAIN FILE</button>
                 </form>
               </div>
             </div>
@@ -350,7 +350,7 @@ if($up_rq['update'] != false){
               <div class="modal-footer bg-whitesmoke br">
                 <a class="btn btn-secondary" data-dismiss="modal">NO! GO BACK</a>
                   <input type="hidden" name="case" value="reset_SETTINGS" />
-                  <button type="button" class="btn btn-danger">YES! RESET SETTINGS</button>
+                  <button type="submit" class="btn btn-danger">YES! RESET SETTINGS</button>
                 </form>
               </div>
             </div>
@@ -377,7 +377,7 @@ if($up_rq['update'] != false){
               <div class="modal-footer bg-whitesmoke br">
                 <a class="btn btn-secondary" data-dismiss="modal">NO! GO BACK</a>
                   <input type="hidden" name="case" value="reset_BRAIN" />
-                  <button type="button" class="btn btn-danger">YES! RESET SETTINGS</button>
+                  <button type="submit" class="btn btn-danger">YES! RESET SETTINGS</button>
                 </form>
               </div>
             </div>

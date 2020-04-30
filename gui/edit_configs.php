@@ -180,10 +180,10 @@ $saved_message=false;
       $saved_message=true;
     }elseif(isset($_POST['case']) && $_POST['case'] == "update_database"){
 // DATABASE 
-      if($_POST['IS_ENABLED'] or $_POST['IS_ENABLED'] == "true"){
-        $BS_SETTINGS_INTERNAL['PLUGINS']['IS_ENABLED'] = true;
+      if(!$_POST['IS_ENABLED'] or $_POST['IS_ENABLED'] == "false"){
+        $BS_SETTINGS_INTERNAL['DB']['IS_ENABLED'] = false;
       }else{
-        $BS_SETTINGS_INTERNAL['PLUGINS']['IS_ENABLED'] = false;
+        $BS_SETTINGS_INTERNAL['DB']['IS_ENABLED'] = true;
       }
       $BS_SETTINGS_INTERNAL['DB']['HOST'] = $class_administrator_bs->stringToArrayFake($_POST['HOST']);
       $BS_SETTINGS_INTERNAL['DB']['NAME'] = $class_administrator_bs->stringToArrayFake($_POST['NAME']);
@@ -463,13 +463,20 @@ $saved_message=false;
                             <?php 
 // DATABASE
                             }elseif($_GET['edit'] == "database"){
-                              if(!isset($saved) or !$saved){
+                              if(isset($saved) and $saved){
+                                echo '<div class="alert alert-info alert-has-icon">
+                                      <div class="alert-icon"><i class="far fa-lightbulb"></i></div>
+                                      <div class="alert-body">
+                                        <button class="btn btn-dark" onClick="window.location.reload();">If the changes are not shown try to refresh this page</button>
+                                      </div>
+                                    </div>';
+                              }
                               $set = $BS_SETTINGS_INTERNAL['DB'];
                             ?>
                                 <form action="?edit=database" method="POST">
                                 <input type="hidden" name="case" value="update_database" />
                                 <div class="form-group">
-                                  <label>ENABLE DABASES  (pdo)</label>
+                                  <label>ENABLE DABASES  (pdo - mysql)</label>
                                   <select class="custom-select" name="IS_ENABLED">
                                     <option disabled>Select an option</option>
                                     <?php 
@@ -512,16 +519,6 @@ $saved_message=false;
 
  
                         <?php
-                            }else{
-                              echo '<div class="alert alert-warning alert-has-icon">
-                              <div class="alert-icon"><i class="far fa-lightbulb"></i></div>
-                              <div class="alert-body">
-                                <div class="alert-title">Saved</div>
-                                Your db informations are saved.
-                                <br><br><a class="btn btn-primary" href="?edit=database">Reload Page</a>
-                              </div>
-                            </div>';
-                            }
 // CAPTCHA
                             }elseif($_GET['edit'] == "captcha"){
                               $set = $BS_SETTINGS_INTERNAL['CAPTCHA'];

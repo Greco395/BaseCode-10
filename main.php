@@ -776,7 +776,7 @@ if($BS_SETTINGS_INTERNAL['PLUGINS']['IS_ENABLED'] == true){
 
 
 
-/*
+/* SOME EXAMPLES
 $class_html->blockAdBlock("ciao");
 /*
 $class_sql->set("dbh");
@@ -810,7 +810,3 @@ var_dump (
     )
 );
 */
-
-
-
-echo "<br><br><hr><br>work!";
