@@ -94,3 +94,37 @@ if(!isset($page_title)){ $page_title="Basecode"; }
             </div>
         </aside>
       </div>
+<?php
+  if(!function_exists("exec") and $page_name != "settings"){
+?>
+        <div class="main-content">
+          <section class="section">
+            <div class="section-header">
+              <h1>Setup</h1>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-12 col-sm-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Initialization error</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="empty-state" data-height="400" style="height: 400px;">
+                      <div class="empty-state-icon bg-danger">
+                        <i class="fas fa-times"></i>
+                      </div>
+                      <h2>Dependencies not met</h2>
+                      <hr>
+                      <p class="lead">
+                        <code>exec</code>() function non found or disabled (<a href="https://www.google.com/?q=php%20how%20to%20enable%20%22exec%22" target="_blank" class="bb">help</a>)
+                      </p>
+                      <hr>
+                      <a href="?reload&rand=<?php echo rand(100,999); ?>" class="btn btn-warning mt-4">Try Again</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+<?php include("footer.php"); die(); } ?>
