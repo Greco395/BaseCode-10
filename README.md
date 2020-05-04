@@ -26,7 +26,7 @@ http://yourwebsite.com/folderTo/BaseCode-10-master/gui/
 
 # Other repositories included
 
-Here is the list with the non-mine repositories that are included in this project.<br>
+Here is the list with the repositories that I did not create but included in this project.<br>
 [**stisla**](https://github.com/stisla/stisla) - by [Nauval](https://github.com/nauvalazhar)<br>
 [**Tiny File Manager**](https://github.com/prasathmani/tinyfilemanager) - by [prasathmani](https://github.com/prasathmani)
 
