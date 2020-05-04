@@ -3,21 +3,21 @@ BaseCode is more than a simple PHP library, with BaseCode you can simplify your 
 [Checkout the demo](https://greco395.com/projects/basecode/gui/) - [Donate](#donate) - [Other repositories included](#other-repositories-included)
 
 [![BaseCode UI](https://greco395.com/API/basecode/images/dash.png)](https://greco395.com/projects/basecode/gui/)
-<!--
+
 # Features
 
--   📼 **Supported Extensions** - support for mp3, ogg, webm and m4a.
--   💪 **Modern design** - the website is designed with the google material design.
--   📱 **Responsive** - works with any screen size.
+-   🌈 **Easy Coding** - Program in PHP much easier and faster.
+-   🏗️ **PHP Building** - Create your projects with plugins to simplify your work.
+-   📱 **GUI** - Manage Base Code with a graphical interface.
 
 # To do
 
--   [x] Login in management panel (v2)
--   [x] Support other audio type (v2)
--   [x] Style in Material design (v3)
--   [ ] Multiple playlist
--   [ ] Offline play
--->
+-   [x] New responsive graphical interface
+-   [x] Plugin system 
+-   [x] Automatic plugins syntax check
+-   [ ] Greater implementation of plugins in administration.
+-   [ ] General improvement [ will never be Completed ;-) ].
+
 # Installation
 Installing this script is really simple, just upload it to the server in the public folder (from VPS for example in /var/www/). Then go on your website to the folder containing the script for configuring the admin panel, example: 
 ```
