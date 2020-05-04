@@ -1,6 +1,6 @@
 BaseCode is more than a simple PHP library, with BaseCode you can simplify your job and create your PHP project in few minutes.
 
-[Checkout the demo](https://greco395.com/projects/basecode/gui/) - [Donate](#donate) - [Other repositories included](#Other+repositories+included)
+[Checkout the demo](https://greco395.com/projects/basecode/gui/) - [Donate](#donate) - [Other repositories included](#other-repositories-included)
 
 [![BaseCode UI](https://greco395.com/API/basecode/images/dash.png)](https://greco395.com/projects/basecode/gui/)
 <!--
