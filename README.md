@@ -1,6 +1,6 @@
 BaseCode is more than a simple PHP library, with BaseCode you can simplify your job and create your PHP project in few minutes.
 
-[Checkout the demo](https://greco395.com/projects/basecode/gui/) - [Donate](#donate) - [Other repositories included](#Other%repositories%included)
+[Checkout the demo](https://greco395.com/projects/basecode/gui/) - [Donate](#donate) - [Other repositories included](#Other+repositories+included)
 
 [![BaseCode UI](https://greco395.com/API/basecode/images/dash.png)](https://greco395.com/projects/basecode/gui/)
 <!--
@@ -27,7 +27,7 @@ http://yourwebsite.com/folderTo/BaseCode-10-master/gui/
 # Other repositories included
 
 Here is the list with the non-mine repositories that are included in this project.<br>
-[**stisla**](https://github.com/stisla/stisla) - by [Nauval](https://github.com/nauvalazhar)
+[**stisla**](https://github.com/stisla/stisla) - by [Nauval](https://github.com/nauvalazhar)<br>
 [**Tiny File Manager**](https://github.com/prasathmani/tinyfilemanager) - by [prasathmani](https://github.com/prasathmani)
 
 # Donate
