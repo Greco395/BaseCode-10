@@ -52,7 +52,7 @@ if(isset($_POST) && isset($_POST['new_pl_case'])){
                     <nav class="navbar bg-primary">
                       <a class="navbar-brand" href="./plugin_editor.php">EDIT OR CREATE PLUGIN</a>
                       <form class="form-inline">
-                        <a class="btn btn-outline-dark" href="./plugin_editor.php">OPEN PHEDITOR</a>
+                        <a class="btn btn-outline-dark" href="./plugin_editor.php">OPEN FILE MANAGER</a>
                       </form>
                     </nav>
                   </div>
