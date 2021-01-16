@@ -2,12 +2,12 @@
 /*~ GR3Studios BaseCode
 .---------------------------------------------------------------------------.
 |  Software: BaseCode - PHP base classes                                    |
-|   Version: 10.0                                                           |
+|   Version: 10.0.1                                                         |
 |      Site: https://domenicogreco.com/basecode/                            |
 | ------------------------------------------------------------------------- |
 |     Admin: Greco Domenico (project admininistrator & Author)              |
 |   Founder: domenicogreco.com                                              |
-| Copyright (c) 2018-2020, GR3Studios. All Rights Reserved.                 |
+| Copyright (c) 2018-2021, GR3Studios. All Rights Reserved.                 |
 | ------------------------------------------------------------------------- |
 |   License: Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)     |
 |            http://creativecommons.org/licenses/by-nc/4.0/                 |
@@ -21,7 +21,7 @@
  * NOTE: Requires PHP version 5 or later (written in 7.4)
  * @see       https://domenicogreco.com/ 
  * @author Greco Domenico
- * @copyright 2018 - 2020+ GR3Studios
+ * @copyright 2018 - 2021+ GR3Studios
  * @version 10.0.0
  * @license http://creativecommons.org/licenses/by-nc/4.0/ (CC BY-NC 4.0)
  * @license https://creativecommons.org/licenses/by-nc/4.0/legalcode
@@ -29,7 +29,7 @@
 
 if (version_compare(PHP_VERSION, '5.0.0', '<') ) exit("Sorry, this version of BaseCode will only run on PHP version 5 or greater!\n");
 $basecode_version_name = "PHP BaseCode 10";
-$basecode_version = "10.0.0";
+$basecode_version = "10.0.1";
 $basecode_edition = "NBV";
 
 if(!include("settings.php")){ die("Settings file not found, go in admin panel to fix!"); }
