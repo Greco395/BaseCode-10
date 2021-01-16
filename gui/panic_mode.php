@@ -1,6 +1,6 @@
 <?php 
 class PANIC{
-    public $internal_bs_version = "10-0-0";
+    public $internal_bs_version = "10-0-1";
     public function __construct(){
         session_name("secure");
         session_start();
@@ -288,7 +288,7 @@ if(!$panic_varClass->check_logged()){ header("Location: access.php"); die("Not l
       <nav class="navbar navbar-expand-lg main-navbar">
       <form class="form-inline mr-auto">
           <ul class="navbar-nav mr-3">
-            <li><a href="#" class="nav-link nav-link-lg btn btn-dark" style="color:red;">EXIT PANIC MODE</a></li>
+            <li><a href="../gui" class="nav-link nav-link-lg btn btn-dark" style="color:red;">EXIT PANIC MODE</a></li>
           </ul>
         </form>
         <ul class="navbar-nav navbar-right">
