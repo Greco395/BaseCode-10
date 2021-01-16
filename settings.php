@@ -22,10 +22,10 @@
         ),
         "DB" => array(
             "IS_ENABLED" => false, // enable or disabled db
-            "HOST" => array("localhost"),
-            "NAME" => array("basecodeDB_test"),
-            "USER" => array("basecodeDB_UserTest"),
-            "PASS" => array("basecodeDB_PasswordTest"),
+            "HOST" => array("localhost"), // for multiple dbs use (example): array("localhost-db1","localhost-db2","localhost-db3"),
+            "NAME" => array("basecodeDB_test"), // for multiple dbs use (example): array("dbname-db1","dbname-db2","dbname-db3"),
+            "USER" => array("basecodeDB_UserTest"), // for multiple dbs use (example): array("dbuser-db1","dbuser-db2","dbuser-db3"),
+            "PASS" => array("basecodeDB_PasswordTest"), // for multiple dbs use (example): array("dbuserpass-db1","dbuserpass-db2","dbuserpass-db3"),
         ),
         "CAPTCHA" => array(
             "GOOGLE_CAPTCHA_PUBLIC-KEY" => "key_value",
