@@ -555,7 +555,7 @@ $saved_message=false;
                                   <form action="?edit=errors" method="POST">
                                   <input type="hidden" name="case" value="update_errors" />
                                   <div class="form-group">
-                                    <label>(on error) Evit public pages die</label>
+                                    <label>(on error) Avoid public pages die</label>
                                     <select class="custom-select" name="NEVER_DIE_PAGE">
                                       <option disabled>Select an option</option>
                                       <?php 
